@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="wrapper">
+  <header>
+    <h1 id="title">LoL Player Survey</h1>
+  </header>
+  <main>
+    <p id="description">Your ways to play LoL</p>
+    <form id="survey-form">
+      
+      
+        <label id="name-label" class="left" for="name">Name</label>
+      <input id="name" class="right stuff" type="text" placeholder="Enter your name" required>
+      
+        <label id="email-label" class="left" for="email">Email</label>
+      <input id="email" class="right stuff" type="email" placeholder="Enter your email" required>
+         
+        <label id="number-label" class="left" for="number">Age</label>
+      <input id="number" class="right stuff" type="number" placeholder="Enter your age" min="18" max="150">
+          
+      
+      <label id="dropdown-label" class="left" for="dropdown">Lane or Jungle</label>
+      <div id="dropdownholder" class="right">
+      <select id="dropdown" name="lanes">
+        <option value="top">Top</option>
+        <option value="mid">Mid</option>
+        <option value="bot">Bot</option>
+        <option value="jungle">Jungle</option>
+      </select>
+      </div>
+      <label class="left">Your favourite playstyle</label>
+      <div id="radioarea" class="right">
+        <label id="at-label" for="ad" class="">
+      <input id="ad" type="radio" name="playstyle" value="ad" checked>
+        AD</label>
+        <label id="ap-label" for="ap" class="morespace">
+      <input id="ap" type="radio" name="playstyle" value="ap">
+        AP</label>
+        <label id="tank-label" for="tank" class="morespace">
+      <input id="tank" type="radio" name="playstyle" value="tank">
+        Tank</label>
+        <label id="mixed-label" for="mixed" class="morespace">
+      <input id="mixed" type="radio" name="playstyle" value="mixed">
+        Mixed</label>
+      </div>
+      
+      <label class="left">Your favourite late game items</label>
+      <div id="checkboxarea" class="right">
+      <label id="item1-label" for="item1" class="morespace">
+        <input id="item1" type="checkbox" name="item1" value="infinity edge">
+        Infinity Edge</label>
+        <label id="item2-label" for="item2" class="morespace">
+      <input id="item2" type="checkbox" name="item2" value="bloodthirster">
+        Bloodthirster</label>
+        <label id="item3-label" for="item3" class="morespace">
+      <input id="item3" type="checkbox" name="item3" value="rabadons deathcap">
+        Rabadon's Deathcap</label>
+        <label id="item4-label" for="item4" class="morespace">
+      <input id="item4" type="checkbox" name="item4" value="hextech gunblade">
+        Hextech Gunblade</label>
+        <label id="item5-label" for="item5" class="morespace">
+      <input id="item5" type="checkbox" name="item5" value="trinity force">
+        Trinity Force</label>
+        <label id="item6-label" for="item6" class="morespace">
+      <input id="item6" type="checkbox" name="item6" value="warmogs armor">
+        Warmog's Armor</label>
+      </div>
+      <label class="left">Wishes for item changes</label>
+      <textarea id="textarea" class="right" name="message">Your comments are welcome</textarea>
+      <div id="buttonholder">
+      <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>    
+  </main>  
+</div>
+<!-- partial -->
+  
+</body>
+</html>
